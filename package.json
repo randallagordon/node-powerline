@@ -6,8 +6,10 @@
   "bin": {
     "node-powerline": "bin/node-powerline"
   },
+  "man": "./doc/node-powerline.1",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test/*.js",
+    "update-doc": "[ -d doc ] && rm doc -r; mkdir doc && marked-man README.md > doc/node-powerline.1"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
   "author": "Randall A. Gordon",
   "license": "MIT",
   "devDependencies": {
-    "tape": "^2.10.2"
+    "tape": "^2.10.2",
+    "marked-man": "^0.1.1"
   },
   "dependencies": {
     "minimist": "0.0.8",
