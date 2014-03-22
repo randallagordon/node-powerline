@@ -1,0 +1,30 @@
+{
+  "name": "node-powerline",
+  "version": "0.0.0",
+  "description": "A partial Node.js replacement for powerline",
+  "main": "index.js",
+  "bin": {
+    "node-powerline": "bin/node-powerline"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randallagordon/node-powerline/"
+  },
+  "keywords": [
+    "powerline",
+    "zsh"
+  ],
+  "author": "Randall A. Gordon",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^2.10.2"
+  },
+  "dependencies": {
+    "minimist": "0.0.8",
+    "require-directory": "^1.2.0",
+    "strftime": "^0.8.0"
+  }
+}
